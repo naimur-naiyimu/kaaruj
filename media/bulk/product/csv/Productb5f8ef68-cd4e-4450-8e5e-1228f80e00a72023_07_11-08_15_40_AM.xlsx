@@ -1,0 +1,103 @@
+name,thumb,category,main_category,sub_main_category,is_new,quantity,stock,sku,price,discount,description,tags,vendor_info,about_brand,shipping_info,variant
+Pillow,,Dinning sets,0,For Dining,1,48,48,SKU12346,1212,1000,Enter description,"[
+    {
+      ""name"": ""Eid""
+    },
+    {
+      ""name"": ""Trend""
+    }
+
+  ]",vendor_info,about_brand,shipping_info,"[
+    {
+      ""attribute_value"": [
+        {
+          ""value"": ""Red"",
+          ""attribute"": 2
+        }
+      ],
+      ""is_active"": true,
+      ""name"": ""Red"",
+      ""price"": 1222,
+      ""stock"": 222
+    },
+    {
+      ""attribute_value"": [
+        {
+          ""value"": ""XL"",
+          ""attribute"": 1
+        }
+      ],
+      ""is_active"": true,
+      ""name"": ""Red-XL"",
+      ""price"": 11232,
+      ""stock"": 22
+    }
+  ]"
+Tshirt 220 GSM,,Tshirt,1,Party Wears,0,48,48,SKU34699,1212,1200,Enter description,"[
+    {
+      ""name"": ""Eid""
+    },
+    {
+      ""name"": ""Trend""
+    }
+
+  ]",vendor_info,about_brand,shipping_info,"[
+    {
+      ""attribute_value"": [
+        {
+          ""value"": ""Red"",
+          ""attribute"": 2
+        }
+      ],
+      ""is_active"": true,
+      ""name"": ""Red"",
+      ""price"": 1222,
+      ""stock"": 222
+    },
+    {
+      ""attribute_value"": [
+        {
+          ""value"": ""XL"",
+          ""attribute"": 1
+        }
+      ],
+      ""is_active"": true,
+      ""name"": ""Red-XL"",
+      ""price"": 11232,
+      ""stock"": 22
+    }
+  ]"
+Shirt Eid Collection,,Shirt,1,Casual Wears,0,48,48,SKU34699,1212,1200,Enter description,"[
+    {
+      ""name"": ""Eid""
+    },
+    {
+      ""name"": ""Trend""
+    }
+
+  ]",vendor_info,about_brand,shipping_info,"[
+    {
+      ""attribute_value"": [
+        {
+          ""value"": ""Red"",
+          ""attribute"": 2
+        }
+      ],
+      ""is_active"": true,
+      ""name"": ""Red"",
+      ""price"": 1222,
+      ""stock"": 222
+    },
+    {
+      ""attribute_value"": [
+        {
+          ""value"": ""XL"",
+          ""attribute"": 1
+        }
+      ],
+      ""is_active"": true,
+      ""name"": ""Red-XL"",
+      ""price"": 11232,
+      ""stock"": 22
+    }
+  ]"

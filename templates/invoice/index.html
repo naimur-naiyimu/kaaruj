@@ -1,0 +1,252 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{number}}</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+       {
+      }
+
+      .header_container {
+        margin: auto;
+      }
+      .header_img {
+        width: 300px;
+      }
+
+      .from {
+        width: 700px;
+      }
+
+      .from h2,
+      .to h2 {
+        font-size: 15px;
+        color: black;
+      }
+      .from p,
+      .to p {
+        font-size: 12px;
+        color: black;
+      }
+
+      .imageP {
+        text-align: center;
+      }
+      .invoice_below tr{
+        height:30px
+      }
+      .Due_button{
+        width: 100px;
+         background: #fcb040; color: white;padding-left: 13px ; 
+      }
+      .UnPaid_button{
+        width: 100px;
+         background:#ef4036; color: white; padding-left: 13px ;
+         
+      }
+      .Paid_button{
+        width: 100px;
+         background: green; color: white; padding-left: 13px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="inner_div">
+        <p class="imageP">
+          <img class="header_img" src={{header_image_url}} alt="" />
+        </p>
+        <p style="font-weight:bold">{{invoice_date}}</p>
+
+        <div>
+          <table style="">
+            <tbody>
+              <tr>
+                <td>
+                  <div style="font-size: 22px; text-transform: capitalize">#{{number}}</div>
+                  <span style="margin-top: 10px"
+                    >Status : <strong>{{payment_status}}</strong>
+  
+                    </span>
+                    <br>
+                    <span style="margin-top: 10px">Delivery :<strong> {{delivery_type}}</strong>
+                    </span>             
+                      <br>
+                    <span style="margin-top: 10px">Payment :<strong> {{payment_type}}</strong>
+                      </span
+          
+                </td>
+
+                <td>
+                  <div style="padding-left: 230px">
+                    <img style="width: 100px" src="{{qr_code.path}}" alt="{{qr_code_text}}" />
+                    {% comment %} <pdf:barcode value="{{barcode_text}}" type="code128" align="right" /> {% endcomment %}
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <table style="margin-top:20px">
+        <tbody>
+          <tr>
+            <td>
+              <div class="from" style="padding-right: 0">
+                <h2>From :</h2>
+                <p>{{bill_from}}</p>
+                <p>{{from_address}}</p>
+                <p>Phone: {{from_mobile}}</p>
+                
+                <p>Email: {{from_email}}</p>
+              </div>
+            </td>
+
+            <td>
+              <div style="width: 350px"></div>
+            </td>
+
+            <td>
+              <div class="to" style="padding-left: 650px">
+                <h2>To :</h2>
+                <p>{{bill_to}}</p>
+                <p>{{to_address}}</p>
+                <p>Phone: {{to_mobile}}</p>
+                <p>Email: {{to_email}}</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin:30px 0">Order Summary</h3>
+
+      <table style="">
+        <thead style="background:black">
+          <th>No</th>
+          <th>Item</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Amount</th>
+        </thead>
+        <tbody>
+
+          {%for item in invoice_products%}
+          <tr>
+            <td style="padding-left : 27px">{{forloop.counter}}</td>
+
+            <td style="padding-left : 27px">
+              <div>{{item.product.name}} ( {{item.variant.name}} )</div>
+            </td>
+
+            <td style="padding-left : 23px;"
+    
+              {% if  item.thumb %}
+              <div style="width:30px;height:30px"><img style="width:30px;height:30px" src={{item.product.get_thumb_url}} alt=""></div>
+              {% else %}
+              <div>N/A</div>
+
+
+              {% endif %}
+            </td>
+
+            <td style="padding-left : 47px">
+
+              <div>{{item.product.get_offer_price}}</div>
+            </td>
+
+            <td style="padding-left : 47px">
+              <div>{{item.quantity}}</div>
+            </td>
+
+            <td style="padding-left : 47px">
+              <div>{{item.total}}</div>
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+
+      <table class="invoice_below" style="margin-top:20px">
+        <tbody>
+            <tr class="" style="">
+                <td width="560px"></td>
+                <td  style="">
+                    <div style="margin-right: 14px;">
+                        <div>Sub Total : </div>
+                    </div>
+                </td>
+                <td>{{subtotal}}</td>
+
+            </tr>
+            <tr class="" style="">
+                <td width="560px"></td>
+                <td class="">
+                    <div class="" style="">
+                        <div>Delivery Charge : </div>
+                    </div>
+                </td>
+                <td> {{delivery_charge}}</td>
+
+            </tr>
+
+            <tr class="" style="">
+              <td width="560px"></td>
+              <td class="">
+                  <div class="" style="">
+                      <div>Discount  : </div>
+                  </div>
+              </td>
+              <td>{{total_discount}}</td>
+
+          </tr>
+
+          <tr class="" >
+            <td width="560px"></td>
+            <td class="">
+                <div class="" style="">
+                    <div>Total : </div>
+                </div>
+            </td>
+            <td>{{total_amount}}</td>
+
+        </tr> 
+        
+        <tr class="" style="">
+            <td width="560px"></td>
+            <td class="">
+                <div class="" style="">
+                    <div>Paid Amount : </div>
+                </div>
+            </td>
+            <td>{{total_paid}}</td>
+
+        </tr>
+
+        <tr class="" style="">
+          <td width="560px"></td>
+          <td class="">
+              <div class="" style="">
+                  <div>Due Amount : </div>
+              </div>
+          </td>
+          <td style="color:red"> {{total_due}}</td>
+
+      </tr>
+            
+        </tbody>
+    </table>
+    </div>
+  </body>
+</html>

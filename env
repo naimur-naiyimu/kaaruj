@@ -1,0 +1,27 @@
+SECRET_KEY=YOUR_SECRET_KEY
+ALLOWED_HOSTS=http://kaaruj.backend.clients.devsstream.com, kaaruj.backend.clients.devsstream.com
+
+DEBUG=True
+
+DB_NAME=clientsdevs_kaaruj_ecom_v2
+DB_USER=clientsdevs_kaaruj_ecom
+DB_PASSWORD=pPa)l9A0wf{6
+DB_HOST=localhost
+DB_PORT=3306
+
+CACHE_LOCATION=YOUR_CACHE_LOCATION
+
+
+EMAIL_HOST=mail.demo.devsstream.com
+EMAIL_PORT=465
+EMAIL_HOST_USER=test@demo.devsstream.com
+EMAIL_HOST_PASSWORD=uob+@mVC(vnm
+
+BASE_URL=http://kaaruj.backend.clients.devsstream.com
+
+
+
+STATIC_ROOT=/home/clientsdevs/kaaruj.backend.clients.devsstream.com/static
+MEDIA_ROOT=/home/clientsdevs/kaaruj.backend.clients.devsstream.com/media
+MEDIA_HOST=https://kaaruj.backend.clients.devsstream.com
+VERSION = 0.0.2

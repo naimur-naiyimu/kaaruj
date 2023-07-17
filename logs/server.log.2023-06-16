@@ -1,0 +1,1352 @@
+Invalid HTTP_HOST header: 'www.kaaruj.backend.clients.devsstream.com'. You may need to add 'www.kaaruj.backend.clients.devsstream.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.kaaruj.backend.clients.devsstream.com'. You may need to add 'www.kaaruj.backend.clients.devsstream.com' to ALLOWED_HOSTS.
+Invoice Create Error
+{'invoice_products': [{'quantity': [ErrorDetail(string='Ensure that there are no more than 8 digits before the decimal point.', code='max_whole_digits')], 'total': [ErrorDetail(string='Ensure that there are no more than 10 digits in total.', code='max_digits')]}], 'bill_to': [ErrorDetail(string='Not a valid string.', code='invalid')]}
+Invoice Create Error
+{'invoice_products': [{'quantity': [ErrorDetail(string='Ensure that there are no more than 8 digits before the decimal point.', code='max_whole_digits')], 'total': [ErrorDetail(string='Ensure that there are no more than 10 digits in total.', code='max_digits')]}], 'bill_to': [ErrorDetail(string='Not a valid string.', code='invalid')]}
+Invoice Create Error
+{'invoice_products': [{'quantity': [ErrorDetail(string='Ensure that there are no more than 8 digits before the decimal point.', code='max_whole_digits')], 'total': [ErrorDetail(string='Ensure that there are no more than 10 digits in total.', code='max_digits')]}], 'bill_to': [ErrorDetail(string='Not a valid string.', code='invalid')]}
+Invoice Create Error
+{'invoice_products': [{'quantity': [ErrorDetail(string='Ensure that there are no more than 8 digits before the decimal point.', code='max_whole_digits')], 'total': [ErrorDetail(string='Ensure that there are no more than 10 digits in total.', code='max_digits')]}], 'bill_to': [ErrorDetail(string='Not a valid string.', code='invalid')]}
+Invoice Create Error
+{'invoice_products': [{'quantity': [ErrorDetail(string='Ensure that there are no more than 8 digits before the decimal point.', code='max_whole_digits')], 'total': [ErrorDetail(string='Ensure that there are no more than 10 digits in total.', code='max_digits')]}], 'bill_to': [ErrorDetail(string='Not a valid string.', code='invalid')]}
+Invoice Create Error
+{'invoice_products': [{'quantity': [ErrorDetail(string='Ensure that there are no more than 8 digits before the decimal point.', code='max_whole_digits')], 'total': [ErrorDetail(string='Ensure that there are no more than 10 digits in total.', code='max_digits')]}], 'bill_to': [ErrorDetail(string='Not a valid string.', code='invalid')]}
+Invalid HTTP_HOST header: 'www.kaaruj.backend.clients.devsstream.com'. You may need to add 'www.kaaruj.backend.clients.devsstream.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.kaaruj.backend.clients.devsstream.com'. You may need to add 'www.kaaruj.backend.clients.devsstream.com' to ALLOWED_HOSTS.
+Internal Server Error: /api/v1/utility/web/global-settings/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/base/base.py", line 282, in ensure_connection
+    self.connect()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/base/base.py", line 263, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2001, "Can't create UNIX socket (24)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 78, in inner
+    with self._recreate_cm():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/transaction.py", line 197, in __enter__
+    if not connection.get_autocommit():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/base/base.py", line 455, in get_autocommit
+    self.ensure_connection()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/base/base.py", line 282, in ensure_connection
+    self.connect()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/base/base.py", line 282, in ensure_connection
+    self.connect()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/base/base.py", line 263, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 247, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+django.db.utils.OperationalError: (2001, "Can't create UNIX socket (24)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/Config/middleware.py", line 6, in __call__
+    response = self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 181, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/debug.py", line 394, in get_traceback_html
+    with self.html_template_path.open(encoding="utf-8") as fh:
+  File "/usr/local/lib/python3.9/pathlib.py", line 1242, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/local/lib/python3.9/pathlib.py", line 1110, in _opener
+    return self._accessor.open(self, flags, mode)
+OSError: [Errno 24] Too many open files: '/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/templates/technical_500.html'
+-----------Invoice Create Issue in send email------------------
+[Errno 2] No such file or directory: '/home/clientsdevs/kaaruj.backend.clients.devsstream.com/media/invoice_pdf/609f9e22-896b-49d9-86ed-a9e5a8b79a95.pdf'
+Internal Server Error: /admin/sales/invoice/4/change/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1802, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/admin.py", line 13, in save_model
+    obj.save()
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/models.py", line 130, in save
+    return super(Invoice, self).save(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 831, in save
+    self.save_base(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 882, in save_base
+    updated = self._save_table(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 995, in _save_table
+    updated = self._do_update(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 1059, in _do_update
+    return filtered._update(values) > 0
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/query.py", line 1215, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1819, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+Internal Server Error: /admin/sales/invoice/4/change/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1802, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/admin.py", line 13, in save_model
+    obj.save()
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/models.py", line 130, in save
+    return super(Invoice, self).save(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 831, in save
+    self.save_base(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 882, in save_base
+    updated = self._save_table(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 995, in _save_table
+    updated = self._do_update(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 1059, in _do_update
+    return filtered._update(values) > 0
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/query.py", line 1215, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1819, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+Internal Server Error: /admin/sales/invoice/2/change/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1802, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/admin.py", line 13, in save_model
+    obj.save()
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/models.py", line 130, in save
+    return super(Invoice, self).save(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 831, in save
+    self.save_base(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 882, in save_base
+    updated = self._save_table(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 995, in _save_table
+    updated = self._do_update(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 1059, in _do_update
+    return filtered._update(values) > 0
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/query.py", line 1215, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1819, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/views.py", line 82, in get
+    return self._get_schema_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/views.py", line 90, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/generators.py", line 268, in get_schema
+    paths=self.parse(request, public),
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/generators.py", line 239, in parse
+    operation = view.schema.get_operation(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/utils.py", line 364, in get_operation
+    return super().get_operation(path, path_regex, path_prefix, method, registry)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 94, in get_operation
+    operation['responses'] = self._get_response_bodies()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 1284, in _get_response_bodies
+    content_response = self._get_response_for_code(serializer, code, media_types, direction)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 1331, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 1502, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 888, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 969, in _map_basic_serializer
+    for field in serializer.fields.values():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'billing_info_details' was declared on serializer ProfileSerializer, but has not been included in the 'fields' option.
+Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/views.py", line 82, in get
+    return self._get_schema_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/views.py", line 90, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/generators.py", line 268, in get_schema
+    paths=self.parse(request, public),
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/generators.py", line 239, in parse
+    operation = view.schema.get_operation(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/utils.py", line 364, in get_operation
+    return super().get_operation(path, path_regex, path_prefix, method, registry)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 94, in get_operation
+    operation['responses'] = self._get_response_bodies()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 1284, in _get_response_bodies
+    content_response = self._get_response_for_code(serializer, code, media_types, direction)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 1331, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 1502, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 888, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/drf_spectacular/openapi.py", line 969, in _map_basic_serializer
+    for field in serializer.fields.values():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'billing_info_details' was declared on serializer ProfileSerializer, but has not been included in the 'fields' option.
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/renderers.py", line 26, in render
+    return super(CustomRenderer, self).render(response, accepted_media_type, renderer_context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/local/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+  File "/usr/local/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type BillingInfo is not JSON serializable
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/coreapp/api/views.py", line 93, in post
+    'billing_info': user.billing_info.id,
+AttributeError: 'NoneType' object has no attribute 'id'
+Internal Server Error: /api/v1/sales/inventory/invoice/inv000005/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 78, in perform_update
+    serializer.save()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/api/inventory/serializers.py", line 67, in update
+    inv_prod_instance =Invoice_Products.objects.get(id=invoice_product_id)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+sales.models.Invoice_Products.DoesNotExist: Invoice_Products matching query does not exist.
+Internal Server Error: /api/v1/utility/admin/global-settings/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/utility/api/admin/views.py", line 21, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+TypeError: 'Document' object is not iterable
+Internal Server Error: /api/v1/inventory/inventory/customer_list_for_invoice/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/inventory/api/inventory/views.py", line 116, in get
+    return Response(serializer.data,status=status.HTTP_200_OK)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `address` is not valid for model `Customer`.
+Internal Server Error: /api/v1/sales/inventory/invoice/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/api/inventory/serializers.py", line 38, in create
+    invoice = Invoice.objects.create(**validated_data)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/models.py", line 130, in save
+    return super(Invoice, self).save(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 831, in save
+    self.save_base(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 882, in save_base
+    updated = self._save_table(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 1025, in _save_table
+    results = self._do_insert(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/base.py", line 1066, in _do_insert
+    return manager._insert(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'INV000006' for key 'number'")
+Internal Server Error: /api/v1/inventory/inventory/customer_list_for_invoice/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/inventory/api/inventory/views.py", line 116, in get
+    return Response(serializer.data,status=status.HTTP_200_OK)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `address` is not valid for model `Customer`.
+Internal Server Error: /api/v1/inventory/inventory/customer_list_for_invoice/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/generic/base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/inventory/api/inventory/views.py", line 116, in get
+    return Response(serializer.data,status=status.HTTP_200_OK)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `address` is not valid for model `Customer`.
+Internal Server Error: /api/v1/sales/inventory/invoice/inv000001/
+Traceback (most recent call last):
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 68, in update
+    self.perform_update(serializer)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/mixins.py", line 78, in perform_update
+    serializer.save()
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/rest_framework/serializers.py", line 207, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/clientsdevs/kaaruj.backend.clients.devsstream.com/sales/api/inventory/serializers.py", line 68, in update
+    inv_prod_instance =Invoice_Products.objects.get(id=invoice_product_id)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/clientsdevs/virtualenv/kaaruj_venv/lib/python3.9/site-packages/django/db/models/query.py", line 650, in get
+    raise self.model.DoesNotExist(
+sales.models.Invoice_Products.DoesNotExist: Invoice_Products matching query does not exist.
