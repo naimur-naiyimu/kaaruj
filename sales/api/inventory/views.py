@@ -807,3 +807,18 @@ class SaveAndSendPdf(APIView):
         if not status:
             return Response({"error": "error"})
         return HttpResponse(file_name)
+    
+from sales.models import Notification
+
+class NotificationView(APIView):
+    def get(self, request):
+        user = request.user
+        notification = Notification.objects.get(user=user)
+        counts = {
+            'user': notification.user.email,
+            'invoice': notification.invoice,
+        }
+
+        notification.reset_counts()
+
+        return Response(counts)

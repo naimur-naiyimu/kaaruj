@@ -22,6 +22,7 @@ from utility.utils import filter_utils,model_utils,slug_utils
 import string
 import json
 from django.db.models.signals import pre_save, post_save
+from django.dispatch import receiver
 
 def get_random_string(length):
     letters = string.digits
@@ -127,21 +128,35 @@ class Invoice(BaseModel):
 
     def get_invoice_products(self):
         return self.invoice_products.all()
-    
+
 
     def save(self, *args, **kwargs):
+        is_new_instance = self.pk is None
+        super().save(*args, **kwargs)
+
+        if is_new_instance:
+            # It's a new instance, create a new notification for the user
+            notification, created = Notification.objects.get_or_create(user=self.created_by)
+            notification.invoice += 1
+            notification.save()
+
         if not self.number:
-            self.number = model_utils.get_invoice_code(Invoice,prefix="INV")
+            self.number = model_utils.get_invoice_code(Invoice, prefix="INV")
         if not self.slug:
             self.slug = self.number
-            # self.slug = slug_utils.generate_unique_slug(self.number,self)
+            # self.slug = slug_utils.generate_unique_slug(self.number, self)
         if not self.id:
-            model_utils.generate_qrcode(self,self.number)
+            model_utils.generate_qrcode(self, self.number)
 
         return super(Invoice, self).save(*args, **kwargs)
 
 
-
+@receiver(post_save, sender=Invoice)
+def increment_notification_count(sender, instance, created, **kwargs):
+    if not created:
+        notification, _ = Notification.objects.get_or_create(user=instance.created_by)
+        notification.invoice += 1
+        notification.save()
         
 
 
@@ -162,6 +177,7 @@ class Invoice(BaseModel):
 
 
 # class DailyReport(BaseModel):
+
 class DailyReport(models.Model):
     products = models.ForeignKey(Products, on_delete=models.CASCADE,blank=True,null=True)
     quantity = models.IntegerField()
@@ -184,3 +200,13 @@ class DailyReport(models.Model):
 
 #     def __str__(self):
 #         return  self.created_at.strftime('%d/%m/%Y')
+
+
+class Notification(models.Model):
+    user = models.ForeignKey("coreapp.user", on_delete=models.CASCADE)
+    invoice = models.IntegerField(default=0)
+
+    def reset_counts(self):
+        self.invoice = 0
+
+        self.save()

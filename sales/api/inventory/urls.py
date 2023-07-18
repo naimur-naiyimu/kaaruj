@@ -18,6 +18,7 @@ urlpatterns = [
     path('generate_pdf/', views.SaveAndSendPdf.as_view()),
     path('export/daily-report/', views.ExportDailyReportAPIView.as_view()),
     path('daily-sales-report', views.DailySalesReportAPIView.as_view()),
+    path('inventory/notifications', views.NotificationView.as_view()),
 
 ]+router.urls
 
