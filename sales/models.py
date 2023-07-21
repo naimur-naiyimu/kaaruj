@@ -23,7 +23,12 @@ import string
 import json
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
+from django.core.exceptions import ValidationError
 
+def validate_only_letters_and_spaces(value):
+    if not value or not value.replace(" ", "").isalpha():
+        raise ValidationError("Only letters and spaces are allowed.")
+    
 def get_random_string(length):
     letters = string.digits
     result_str = ''.join(random.choice(letters) for i in range(length))
@@ -99,14 +104,16 @@ class Invoice(BaseModel):
     created_for = models.ForeignKey("coreapp.user", on_delete=models.SET_NULL, blank=True, null=True, related_name="invoice_created_for")
     created_by = models.ForeignKey("coreapp.user", on_delete=models.SET_NULL, blank=True, null=True, related_name="invoice_created_by")
     send_pdf = models.BooleanField()
-    card_holder_name = models.CharField(max_length=100, blank=True, null=True)
-    card_number = models.CharField(max_length=100, blank=True, null=True)
-    bank_name = models.CharField(max_length=100, blank=True, null=True)
+    card_holder_name = models.CharField(max_length=100, blank=True, null=True, validators=[validate_only_letters_and_spaces])
+    card_number = models.IntegerField(max_length=100, blank=True, null=True)
+    bank_name = models.CharField(max_length=100, blank=True, null=True, validators=[validate_only_letters_and_spaces])
     banK_account_number = models.CharField(max_length=100, blank=True, null=True)
-    banK_account_name = models.CharField(max_length=100, blank=True, null=True)
+    banK_account_name = models.CharField(max_length=100, blank=True, null=True,validators=[validate_only_letters_and_spaces])
     banK_branch_name = models.CharField(max_length=100, blank=True, null=True)
     bkash_number = models.CharField(max_length=11, blank=True, null=True)
     bkash_trx_number = models.CharField(max_length=11, blank=True, null=True)
+    nagad_number = models.CharField(max_length=11, blank=True, null=True)
+    nagad_trx_number = models.CharField(max_length=11, blank=True, null=True)
     is_custom = models.BooleanField(default=False)
     is_stock_updated_after_return = models.BooleanField(default=False)
 
@@ -131,14 +138,11 @@ class Invoice(BaseModel):
 
 
     def save(self, *args, **kwargs):
-        is_new_instance = self.pk is None
         super().save(*args, **kwargs)
 
-        if is_new_instance:
-            # It's a new instance, create a new notification for the user
-            notification, created = Notification.objects.get_or_create(user=self.created_by)
-            notification.invoice += 1
-            notification.save()
+        notification= Notification.objects.get()
+        notification.invoice += 1
+        notification.save()
 
         if not self.number:
             self.number = model_utils.get_invoice_code(Invoice, prefix="INV")
@@ -205,8 +209,9 @@ class DailyReport(models.Model):
 class Notification(models.Model):
     user = models.ForeignKey("coreapp.user", on_delete=models.CASCADE)
     invoice = models.IntegerField(default=0)
-
-    def reset_counts(self):
-        self.invoice = 0
-
-        self.save()
+    reviews = models.IntegerField(default=0)
+    contact_us = models.IntegerField(default=0)
+    work_us = models.IntegerField(default=0)
+    
+    # def __str__(self):
+    #     return self.user

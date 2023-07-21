@@ -279,6 +279,8 @@ class Category(BaseModelActive):
 
     
     def save(self, *args, **kwargs):
+        self.name = self.name.upper()
+        
         if not self.slug:
             self.slug = slug_utils.generate_unique_slug(self.name, self)
           
@@ -302,6 +304,7 @@ class Customer(BaseModel):
     to_country = models.CharField(max_length=50, blank=True, null=True)
 
     def save(self, *args, **kwargs):
+        
         if not self.slug:
             self.slug = slug_utils.generate_unique_slug(self.name, self)
         try:

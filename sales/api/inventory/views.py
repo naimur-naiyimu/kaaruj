@@ -812,13 +812,10 @@ from sales.models import Notification
 
 class NotificationView(APIView):
     def get(self, request):
-        user = request.user
-        notification = Notification.objects.get(user=user)
-        counts = {
-            'user': notification.user.email,
-            'invoice': notification.invoice,
-        }
+        user = self.request.user
 
-        notification.reset_counts()
+        # Filter notifications by the current user
+        notifications = Notification.objects.filter(user=user)
 
-        return Response(counts)
+        serializer = NotificationSerializer(notifications, many=True)
+        return Response(serializer.data)
