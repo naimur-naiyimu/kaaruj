@@ -11,6 +11,13 @@ from utility.utils.model_utils import *
 from utility.utils.bulk_utils import ProductBulkImport,CustomerBulkImport
 import base64
 from utility.utils.printer_utils import print_barcode,convert_zpl
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from rest_framework.pagination import PageNumberPagination
+
+class RandomPageNumberPagination(PageNumberPagination):
+    page_size = 4
+    page_size_query_param = 'page_size'
+    
 def download(request, path):
     file_path = os.path.join(settings.MEDIA_ROOT, path)
     if os.path.exists(file_path):
@@ -134,6 +141,24 @@ class ProductView(ModelViewSet):
     filterset_class = ProductSearchFilter
     http_method_names = ['get', 'post', 'patch', 'delete']
 
+    pagination_class = RandomPageNumberPagination
+
+
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        paginated_queryset = self.paginate_queryset(queryset)
+        paginated_list = list(paginated_queryset)
+        print(paginated_list)
+        random.shuffle(paginated_list)  # Shuffle the paginated data
+        print(paginated_list)
+
+        serializer = ProductSerializer(paginated_list, many=True)
+        return self.get_paginated_response(serializer.data)
+
+    @action(detail=False, methods=['get'])
+    def random(self, request, *args, **kwargs):
+        return self.list(request, *args, **kwargs)
 
     def get_serializer_class(self):
         print("self.action",self.action)
